@@ -1,11 +1,16 @@
-# Processing-Simulation
+# Empire
 A genetic algorithm simulation made in processing.
+
+
+# Info Section
+To the left of the simulation box is an info section. The info section contains the total population amount (which caps at 1750), the current time and the seed. If you hover over an obstacle with your mouse, it will also display the amount of cells that obstacle has killed. The rectangles (which appear in and out of existence) dictate the colony information and are only displayed if a colony has a minimum of four cells. The information beside the coloured box representing the colony is formatted as "colonlySize : colonyStrength."
 
 # Movement and update
 Each cell has a designated colony depicted by the color.
 Each cell has an array of floats that represent angles in a unit vector.
 Upon update, every cell will shift its life index over by one, and move in the direction of the angle at its index
 If a cell comes into contact with another cell from a different colony, the one with the higher strength value will kill the other
+
 
 # Natural disasters
 There is a small percent chance that the colony (group of cells) with the highest population will be hit by a plauge killing a random amount of the colony.
