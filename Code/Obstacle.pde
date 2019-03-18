@@ -9,7 +9,7 @@ class Obstacle {
   public Obstacle(){
     x = floor(random(minVal.x + 50, maxVal.x - 50));
     y = floor(random(minVal.y + 50, maxVal.y - 50));
-    r = floor(random(10,25));
+    r = floor(random(5,15));
     killCount = 0;
   }
 
@@ -29,6 +29,7 @@ class Obstacle {
     fill(0);
     noStroke();
     ellipseMode(CENTER);
+    ellipseMode(RADIUS);
     circle(x,y,r);
     popMatrix();
   }
