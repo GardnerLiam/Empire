@@ -39,4 +39,4 @@ the birth function is the function that dictates how the mutations work. It firs
 This is a relatively small class. It contains final variables for the states for the draw function. It also holds currentState and previousState integer variables and methods to set, get, and switch between states.
 
 # Obstacle
-The obstacle contains a position (x and y variables) and a radius which are all initialized at random. It also has a killCount variable to see how many cells its killed. It has a getKillCount method and a draw method.
+The obstacle contains a position (x and y variables) and a radius which are all initialized at random. It also has a killCount variable to see how many cells its killed. It has a getKillCount method, a draw method and a collision method which checks if a cell has collided with the obstacle. If a cell does collide with the obstacle (and that cell is not plagued) the kill count will go up and the cell's plagued variable will be set to true.
