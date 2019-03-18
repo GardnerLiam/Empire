@@ -14,7 +14,7 @@ class Obstacle {
   }
 
   void collision(Cell c) {
-    if (dist(c.x, c.y, x, y) < r) {
+    if (dist(c.x, c.y, x, y) < r && c.plagued == false) {
       c.isDead = true;
       killCount++;
     }
